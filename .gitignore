@@ -1,3 +1,3 @@
 .ipynb_checkpoints/
-CustomerData.csv
-SaleStatsCustomerWise.csv
+data/CustomerData.csv
+data/SaleStatsCustomerWise.csv
