@@ -10,6 +10,8 @@ This report summarizes the key insights, transformations, and outcomes derived f
 - Loaded 10,000+ rows with 21 columns.
 - Detected multiple data inconsistencies across date, category, and numeric fields.
 
+---
+
 ### 2. Duplicate Handling
 - Removed exact and not so exact (details in the notebook) duplicate rows.
 - a code snippet from this section
@@ -26,6 +28,8 @@ Number of rows with duplicate row_id attribute are - 20
 - Documented the number of rows affected and deleted.
 - <mark>**In total**, there existed **21** duplicate records</mark>
 
+---
+
 ### 3. Date Normalization
 - Normalized `Order Date` and `Ship Date`.
 - Normalizing of `Ship Date` was done in two parts because it consisted of dates of two types.
@@ -36,6 +40,8 @@ Number of rows with duplicate row_id attribute are - 20
     - Category = Office Supplies
     - Sub-category = Paper
 - no inconsistencies in `Product ID` column were found
+
+---
 
 ### 4. Missing Value Imputation
 - Handled some inconsitencies in `Ship Date` column
@@ -50,12 +56,18 @@ Number of rows with duplicate row_id attribute are - 20
     2. `median` is robust against outliers, ensuring that extremely high or low values do not skew the imputation.
     - **rows affected = 17**
 
+---
+
 ### 5. Data Masking & Text Cleaning
 - Masked PII by dropping `Customer Name` and creating `Customer Name Masked` with initials.
 - Standardized `Postal Code` to 5-character strings.
 
+---
+
 ### 6. Type Conversion
 - Converted `Quantity`, `Sales Price`, and other numeric fields from string to `int`/`float`.
+
+---
 
 ### 7. Handling Inconsistent Categorical Data
 - Normalized state names (e.g., "CA" → "California", 'WA\\' → "Washington").
@@ -198,7 +210,7 @@ Ohio            89.0117
 
 ---
 
-## 🧠 Challenges Faced
+## Challenges Faced
 
 - Handling inconsistent date formatting and mapping `Order ID` years.
 - Filling missing values while preserving statistical integrity.
@@ -207,7 +219,7 @@ Ohio            89.0117
 
 ---
 
-## 📌 Project Preparedness
+## Project Preparedness
 
 - Code is **modular and reusable**.
 - Notebook runs end-to-end with no manual intervention.
@@ -215,8 +227,7 @@ Ohio            89.0117
 
 ---
 
-## ✍️ Author
+## Author
 
 **Sudarshan Bankar**  
-Built with ❤️, Python, and Pandas.
-
+Data Analyst | Business Intelligence Specialist ;)
